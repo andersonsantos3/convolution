@@ -21,6 +21,6 @@ This command will return the positional and optional arguments to run the applic
 The images folder contained in this project's directory has two images. An example of a command to run the application is:
 > python3 main.py images/noisy.jpg Gaussian --out_path ./results
 
-This command will open the image noisy.jpg and apply three Gaussian filters (5x5, 7x7 and 11x11) by means of the convolution operation.
+This command will open the image noisy.jpg and apply three Gaussian filters (5x5, 7x7 and 11x11) by means of the convolution operation. To maintain the image size during convolution, zero padding is used. After convolution, the results will be saved and shown on the screen.
 
 If you do not want to save the resulting images, simply do not enter the --out_path parameter.
